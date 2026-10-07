@@ -1,0 +1,20 @@
+[project]
+name = "neteasemusicfollowsinger"
+version = "0.3.1"
+description = "Windows multilingual lyric practice companion"
+requires-python = ">=3.12,<3.13"
+license = "GPL-3.0-only"
+dependencies = [
+  "PySide6>=6.8,<6.11",
+  "requests>=2.32,<3",
+  "websocket-client>=1.8,<2",
+  "pykakasi>=2.3,<3",
+  "cmudict>=1.1,<2",
+  "winrt-runtime>=3,<4; sys_platform == 'win32'",
+  "winrt-Windows.Media.Control>=3,<4; sys_platform == 'win32'",
+  "winrt-Windows.Foundation>=3,<4; sys_platform == 'win32'",
+  "winrt-Windows.Foundation.Collections>=3,<4; sys_platform == 'win32'",
+]
+
+[tool.setuptools]
+packages = ["followsinger"]
