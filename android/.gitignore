@@ -1,0 +1,9 @@
+.gradle/
+.gradle-user-home/
+.tools/
+local.properties
+**/build/
+tools/node_modules/
+tools/artifacts/
+*.jks
+*.keystore

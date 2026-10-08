@@ -2,7 +2,11 @@
 
 一个 Windows 桌面歌词跟唱练习程序，参考[咏伴 · Utatomo](https://github.com/AsaMisogi/Cloudmusic-Lyrics-Singing)的功能思路重新组织界面与练习流程，并加入俄语、法语、韩语读音辅助。支持本地音频、网易云歌曲歌词搜索，以及跟随网易云客户端播放。
 
-## 0.3.1 切句抖动修复
+## Android 手机版
+
+新增 [Android 0.1.0](android/README.md)：可安装 APK，支持 Android 8.0 以上，提供五语离线读音、新手汉字谐音、五种皮肤、本地跟唱播放器和网易云媒体会话连接。[下载手机版 APK 与源码](https://github.com/hy0713/neteasemusicfollowsinger/releases/tag/android-v0.1.0)。手机安装与构建说明见 Android 文档。手机版与 Windows 版分别构建；网易云手机端提供的定位和倍速能力需要真机核对。
+
+## Windows 0.3.1 切句抖动修复
 
 正常播放时，不再把每次轮询读到的重复进度当作新的起点：避免刚切下一句，又被尚未更新的客户端滑块拉回上一句。小幅校正保持显示进度向前，按当前倍速最多推算一秒；停滞时冻结预测。手动定位、单句循环、客户端明显回退、换歌和暂停仍可正常更新定位。本地播放器不经过远端进度过滤。
 

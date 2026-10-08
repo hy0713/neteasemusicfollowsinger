@@ -12,3 +12,9 @@
 *.wav binary
 *.tar.gz binary
 vendor/espeak-ng/** -text
+android/app/src/main/assets/web/vendor/** -text
+*.gz binary
+*.bin binary
+*.kt text eol=lf
+*.kts text eol=lf
+*.mjs text eol=lf
